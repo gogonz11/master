@@ -5,16 +5,29 @@
 
 
 function cekUjian(a,b){
-
+    var nilai = 0;
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] === b[i]) {
+            nilai += 4;
+        } else if (b[i] === '') {
+            nilai += 0;
+        } else {
+            nilai -= 1;
+        }
     }
-    
-    
-    
-    
-    
-    
-    
-    console.log(cekUjian(["a", "a", "b", "b"], ["a", "c", "b", "d"]), 6);
-    console.log(cekUjian(["a", "a", "c", "b"], ["a", "a", "b",  ""]), 7);
-    console.log(cekUjian(["a", "a", "b", "c"], ["a", "a", "b", "c"]), 16);
-    console.log(cekUjian(["b", "c", "b", "a"], ["",  "a", "a", "c"]), 0);
+    if (nilai < 0) {
+        nilai = 0;
+    }
+    return nilai;
+}
+
+
+
+
+
+
+
+console.log(cekUjian(["a", "a", "b", "b"], ["a", "c", "b", "d"]), 6);
+console.log(cekUjian(["a", "a", "c", "b"], ["a", "a", "b",  ""]), 7);
+console.log(cekUjian(["a", "a", "b", "c"], ["a", "a", "b", "c"]), 16);
+console.log(cekUjian(["b", "c", "b", "a"], ["",  "a", "a", "c"]), 0);

@@ -3,9 +3,13 @@
 */
 
 function duaKaliUsia(ayah, anak) {
-    // your code here
-
+  var umur = 0;
+  while (anak * 2 !== ayah) {
+      ayah++;
+      umur++;
   }
+  return umur;
+}
 
 
 console.log(duaKaliUsia(55,30)) //5
