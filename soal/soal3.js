@@ -17,8 +17,6 @@ DNA2 = DNA2.replace(/T/g, 'U')
 // replace T with U in DNA3
 DNA3 = DNA3.replace(/T/g, 'U')
 
-
-
 //output
 console.log(DNA1) // "UUUU"
 console.log(DNA2) // "GCAU"

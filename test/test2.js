@@ -2,8 +2,6 @@
 // berikanlah nilai 4 untuk jawaban yang benar, dan -1 untuk jawaban yang salah, serta 0 untuk tidak menjawab
 // jika nilai akhir nya kurang dari 0, maka beri nilai 0
 
-
-
 function cekUjian(a,b){
     var nilai = 0;
     for (var i = 0; i < a.length; i++) {
@@ -20,12 +18,6 @@ function cekUjian(a,b){
     }
     return nilai;
 }
-
-
-
-
-
-
 
 console.log(cekUjian(["a", "a", "b", "b"], ["a", "c", "b", "d"]), 6);
 console.log(cekUjian(["a", "a", "c", "b"], ["a", "a", "b",  ""]), 7);

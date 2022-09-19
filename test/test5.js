@@ -8,8 +8,6 @@ function muridTerbaik(nilai) {
       nilaiMurid.push([key,  average]);
   }
 
-  
-
   // filter undefined from nilaiMurid
   nilaiMurid = nilaiMurid.filter(function(n) { return n != undefined });
   
@@ -23,10 +21,6 @@ function muridTerbaik(nilai) {
   return highestAverageStudent.map(function(n) { return n[0]; }).join(', ');
   
 }
-
-
-
-
 
 console.log(muridTerbaik({
     John: [100, 90, 80],

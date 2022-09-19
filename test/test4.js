@@ -11,7 +11,6 @@ function duaKaliUsia(ayah, anak) {
   return umur;
 }
 
-
 console.log(duaKaliUsia(55,30)) //5
 console.log(duaKaliUsia(27,17)) //7
 console.log(duaKaliUsia(90,50)) //10
